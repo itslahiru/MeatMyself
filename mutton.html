@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./Styles/boilerplate.css">
+
+    <title>Meat Myself</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./node_modules/bootstrap-icons/icons/shop-window.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Meat Myself
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Chicken</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active activepage" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Redmeat
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item activedrop" href="#">Beef</a></li>
+                      <li><a class="dropdown-item activedrop" href="#">Mutton</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Readymade</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Seafood</a>
+                  </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link active" href="#">Link</a>
+                  </li>-->
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+      <!--
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="card h-100 w-65">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Leg</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card h-100 w-65">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Liver</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>   </div>
+          </div>
+          <div class="col-3">
+            <div class="card h-100 w-65">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Chop Cut</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="container-fluid">
+        <div class="row my-5">
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Leg</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Liver</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Cut</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Chops</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Leg</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Liver</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Cut</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 my-3">
+            <div class="card">
+              <img src="./Images/sample.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mutton Chops</h5>
+                <p class="card-text">Price: Rs.699</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white" type="button">Remove from cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <div class="row ">
+          <div class="col">
+            <p class="text-center text-white">Privacy policy</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white">Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="mb-0 text-center text-white">Copyright &copy; Meat Myself 2023</p>
+      </div>
+  </footer>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
