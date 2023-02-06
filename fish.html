@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./Styles/boilerplate.css">
+
+    <title>Meat Myself</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./node_modules/bootstrap-icons/icons/shop-window.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Meat Myself
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./Chicken.html">Chicken</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Redmeat
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item activedrop" href="./beef.html">Beef</a></li>
+                  <li><a class="dropdown-item activedrop activepage" href="./mutton.html">Mutton</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./readymade.html">Readymade</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active activepage" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Seafood
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item activedrop" href="lobster_and_crab.html">Lobsters and crabs</a></li>
+                  <li><a class="dropdown-item activedrop activepage" href="fish.html">Fish</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+    
+    <main>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+              <img src="./Images/tuna.jpg" class="card-img-top img-size" alt="tuna" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Tuna Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.500</h6>
+                <p class="card-text quantity">Quantity: 56</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Tuna Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This tuna fish is imported from the main fish delivery port in Japan.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/Salmon.png" class="card-img-top img-size" alt="salmon" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Salmon Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.97</h6>
+                <p class="card-text quantity">Quantity: 89</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Salmon Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This salmon fish is caught in the South Side of the Indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/fish1.jpg" class="card-img-top img-size" alt="Mackerel" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Mackerel Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.310</h6>
+                <p class="card-text quantity">Quantity: 67</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Mackerel Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This mackerel fish is caught in the Southwestern Side of the Indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/sardines.jpg" class="card-img-top img-size" alt="sardines" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Sardines Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.210</h6>
+                <p class="card-text quantity">Quantity: 39</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Sardine Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This sardine fish is caught in the North Side of the Indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/perch2.jpg" class="card-img-top img-size" alt="perch" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Perch Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.380</h6>
+                <p class="card-text quantity">Quantity: 72</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Perch Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This perch fish is caught in the West Side of the indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/Rainbow_Trout.jpg" class="card-img-top img-size" alt="Rainbow Trout" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Rainbowtrout Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.490</h6>
+                <p class="card-text quantity">Quantity: 89</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Rainbowtrout Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This rainbowtrout fish is caught in the North Side of the Indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/cod.jpg" class="card-img-top img-size" alt="cod" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Cod Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.420</h6>
+                <p class="card-text quantity">Quantity: 53</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Cod Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This cod fish is caught in the North Side of the Indian Ocean.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 d-xl-block d-lg-block d-md-block d-sm-none my-3">
+            <div class="card">
+                <img src="./Images/herring.jpg" class="card-img-top img-size" alt="herring" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Herring Fish</h5>
+                <h6 class="card-subtitle mb-2">Price: Rs.300</h6>
+                <p class="card-text quantity">Quantity: 64</p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark text-white addToCart" type="button">Add to cart</button>
+                  <button class="btn btn-dark text-white removeFromCart" type="button">Remove from cart</button>
+                  <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                    View product details
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Herring Fish</h1>
+                          <button type="button" class="btn-close btn-dark text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <b>Category:</b> Seafood
+                          <br>
+                          <br>
+                          <ul>
+                            <li>
+                              This small lobster is imported form the main lobster delivery port in Italy.
+                            </li>
+                            <br>
+                            <li>
+                              And this item does not contain any artificial ingredients.
+                            </li>
+                          </ul>
+                          This herring fish is caught in the South Side of the Indian Ocean. And this item does not contain any artificial ingredients.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <div class="row ">
+          <div class="col">
+            <p class="text-center text-white">Privacy policy</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white">Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="mb-0 text-center text-white">Copyright &copy; Meat Myself 2023</p>
+      </div>
+  </footer>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!--<script src="./Scripts/cart.js"></script>-->
+  <div id="app"></div>
+  <script src="./Scripts/cart.js"></script>
+</body>
+</html>
