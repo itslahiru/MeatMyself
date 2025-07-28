@@ -22,7 +22,7 @@ As the **Project Manager**, I was responsible for:
 - Ensuring we stayed aligned with the project scope and delivery deadlines.
 
 ## Key Outcomes
-- Successfully launched a working MVP within 3 months.
+- Successfully launched a working MVP within 4 months.
 - Improved team efficiency through agile collaboration practices.
 - Positive feedback on UI/UX flow during user testing rounds.
 
