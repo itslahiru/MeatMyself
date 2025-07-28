@@ -33,4 +33,6 @@ As the **Project Manager**, I was responsible for:
 
 ---
 
+Live Link: https://itslahiru.github.io/MeatMyself/home.html
+
 Feel free to explore the source code and demo if you'd like to learn more!
